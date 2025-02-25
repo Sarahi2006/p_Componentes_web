@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./output.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+  <header class="sticky top-0 bg-indigo-600 text-white shadow-lg z-50">
+    <nav class="container mx-auto px-4 py-3 flex justify-between item-center">
+      <h1 class="text-x1 font-bold">Tailwind Demo</h1>
+      <div class="hidden md:flex space-x-y">
+        <a href="#posicionamiento" class="text-gray-400 hover:text-gray-800 px-2">Posicionamiento</a>
+        <a href="#Displey" class="text-gray-400 hover:text-gray-800 px-2">Displey</a>
+        <a href="#Grid" class="text-gray-400 hover:text-gray-800 px-2">Grid</a>
+      </div>
+      <button class="md:hidden p-2 rounded bg-indigo-500 hover:bg-indigo-400"></button>
+    </nav>
+  </header>
+
+  <!--seccion posicionamiento-->
+  <main>
+    <section class="mb-12 text-center">
+      <h2 class="text-3x font-bold mb-4">Conseptos de css en tailwind</h2>
+      <p class="max-w-2x1 mx-auto hover:text-gray-600">
+        demostraciones, de posicionamiento propiedades de display y system de grid usando tailwind css
+      </p>
+    </section>
+    <section id="posicionamiento" class="mb-12 bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3x font-bold mb-6 border-b pb-2">Posicionamiento</h2>
+      <div class="relative bg-gray-200 h-64 rounded-lg p-4 mb-6">
+        <div class="absolute top-0 right-0 bg-red-500 text-white p-2 rounded">Top Right-0</div>
+        <div class="absolute boto top-0 left-0 bg-red-500 text-white p-2 rounded">Top-0 Right-0</div>
+        <div class="absolute bottom-0  left-0 bg-red-500 text-white p-2 rounded">Botton-0 Left-0</div>
+        <div class="absolute bottom-0  right-0 bg-red-500 text-white p-2 rounded">Botton-0 Right-0</div>
+        <div class="absolute inset-0 m-auto w-32 h-10 bg-yellow-500 text-center flex items-center justify-center rounded">Centrado</div>
+      </div>
+
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full md:1/2 px-2 mb-4">
+          <div class="border border-gray-300 p-4 rounded">
+            <h3 class="font-bold mb-2 ">Posicion Relativa</h3>
+            <div class="relative p-4 bg-gray-200 rounded">
+              <div class="bg-indigo-300 p-2 rounded">Elemento Base</div>
+              <div class="relative bg-indigo-500 text-white p-2 top-2 left-2 rounded mt-2">
+                Elemento Desplazado  (top-2 left-2)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fixed bottom-4 right-4 bg-green-500 p-2 text-white rounded shadow-lg">
+          Boton fijo (prueba)
+        </div>
+      </div>
+    </section>
+    <!--seccion posicionamiento-->
+    <section id="display" class="mb-12 bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2x1 font-bold mb-6 border-b pb-2">Propiedades de Display</h2>
+
+      <div class="mb-8">
+        <h3 class="font-bold mb-2">Display Block vs Online-Block</h3>
+        <div class="bg-gray-200 p-4 rounded mb-4">
+          <span class="block bg-blu-200 p-2 mb-2">Elemento Block</span>
+          <span class="block bg-blu-200 p-2 mb-2">ocupa todo el ancho display</span>
+        </div>
+        <div class="bg-gray-200 p-4 rounded mb-4">
+          <span class="inline bg-green-200 p-2">Inline</span>
+          <span class="inline bg-green-200 p-2">Solo ocupa</span>
+          <span class="inline bg-green-200 p-2">el ancho necesario</span>
+        </div>
+        <div class="bg-gray-200 p-4 rounded">
+          <span class="inline-block bg-purple-200 p-2 mb-1">Inicio Block</span>
+          <span class="inline-block bg-purple-200 p-2 mb-1 w-32 h-16">Con altura y ancho</span>
+          <span class="inline-block bg-purple-200 p-2 mb-1">Definidos</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Flexbox</h3>
+        <div class="flex flex-wrap mb-4 bg-gray-200 p-4 rounded">
+          <div class="bg-purple-200 p-3 m-1">Flex1</div>
+          <div class="bg-purple-300 p-3 m-1">Flex2</div>
+          <div class="bg-purple-400 p-3 m-1">Flex3</div>
+        </div>
+        <div class="flex justify-between mb-4 bg-gray-200 p-4 rounded">
+          <div class="bg-yellow-200 p-3">Start</div>
+          <div class="bg-yellow-300 p-3">Center</div>
+          <div class="bg-yellow-400 p-3">End</div>
+        </div>
+        <div class="flex items-center h-24 mb-4 bg-gray-200 p-4 rounded">
+          <div class="bg-blue-200 p-3 h-8">Small</div>
+          <div class="bg-blue-300 p-3 h-16">Medium</div>
+          <div class="bg-blue-400 p-3 h-28">Largo</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
